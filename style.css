@@ -2,6 +2,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr;
     background-color: #ede9fe;
+    gap: 5px;
 }
 
 .sidebar {
@@ -152,7 +153,7 @@ body {
     
 }
 
-.release-list, .trend-list{
+.release-list , .trend-holder{
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -165,7 +166,7 @@ body {
     margin: 15px;
 }
 
-.released-album, .trend-item{
+.released-album, .trend-list{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -226,18 +227,78 @@ body {
 }
 
 .band-name{
-    padding: 0;
+    padding-top: 5px;
     font-size: 40px;
 }
 
 .album-name{
     font-size: 25px;
     text-align: center;
+    
 }
 
 .song-name{
-    font-size: 20px;
+    font-size: 15px;
     padding: 1px;
+    text-align: left;
+    margin: 2px;
+    overflow:visible;
+}
+
+.album-songs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+
+    grid-column-gap: 20px;
+}
+
+.album1{
+    background-image: url(assets/raum.jpg);
+}
+
+.album2{
+    background-image: url(assets/alduorka.jpeg);
+}
+
+.album3{
+    background-image: url(assets/murderwall.jpg);
+}
+
+.ra-albumlogo, .trend-logo{
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    background-size: 100%;
+    margin: auto;
+}
+
+.released-album, .trend-item{
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   justify-content: center;
+    gap:25px;
     
-  
+}
+
+
+.trend1{
+    background-image: url(assets/trend1.jpg);
+}
+.trend2{
+    background-image: url(assets/trend2.jpg);
+}
+
+.trend3{
+    background-image: url(assets/trend3.jpg);
+}
+.trend4{
+    background-image: url(assets/trend4.jpg);
+}
+
+
+.trend-desc{
+    display: flex;
+    flex-direction: column;
 }
