@@ -1,0 +1,243 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background-color: #ede9fe;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-start;
+    background-color: #c4b5fd;
+    border-radius: 10px;
+
+}
+
+.dashboard-title{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ddd6fe;
+}
+
+.sidebar>ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ddd6fe;
+    padding: 10px;
+
+}
+
+
+.rightside {
+    display: grid;
+    grid-template-rows: 1fr 1fr 16fr;
+    gap: 10px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: space-around;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #c4b5fd;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+.searchbox {
+    flex: 1;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 2px solid purple;
+
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ddd6fe;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.top-header>.username {
+    width: 25vw;
+}
+
+.top-header>button {
+
+    background-color: #a78bfa;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.right-contents{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 25px;
+    justify-content: center;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ddd6fe;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+
+.content-holder{
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.cat-header{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #c4b5fd;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.content-holder .card{
+    height:300px;
+
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #c4b5fd;
+    color: black;
+
+    border-radius: 10px;
+    
+    padding: 0px;
+    background-size: 100%;
+}
+
+.right-right{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ddd6fe;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+
+.release-list, .trend-list{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ddd6fe;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.released-album, .trend-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #c4b5fd;
+    color: black;
+    border-radius: 10px;
+    width: 100%;
+    height: 10vh;
+    padding: 0;
+   
+}
+
+.king-crimson{
+    background-image: url(assets/king-crimson.jpeg);
+
+}
+
+.jethro-tull{
+    background-image: url(assets/jethro-tull.jpeg);
+    
+}
+.yes{
+    background-image: url(assets/yes.jpg);
+}
+.pink-floyd{
+    background-image: url(assets/animals.jpeg);
+}
+
+.genesis{
+    background-image: url(assets/genesis.jpeg);
+}
+.supertramp{
+    background-image: url(assets/supertramp.jpeg);
+}
+.can{
+    background-image: url(assets/can.jpeg);
+}
+
+.w-ash{
+    background-image: url(assets/w-ash.jpeg);
+}
+
+.on-card{
+    background-color: #c4b5fdb0;
+    padding: 25;
+    margin: 0;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+}
+
+.band-name{
+    padding: 0;
+    font-size: 40px;
+}
+
+.album-name{
+    font-size: 25px;
+    text-align: center;
+}
+
+.song-name{
+    font-size: 20px;
+    padding: 1px;
+    
+  
+}
